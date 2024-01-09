@@ -12,3 +12,16 @@ document.getElementById('idHtml').innerHTML = noveVariabileJS;
 
 */
 
+createApp({
+    data() {
+        return {
+            h1Content: 'Ora ho Vue qui?',
+        };
+    },
+    methods: {
+        handleButtonClick() {
+            console.log(this.faiQualcosa(3));
+        },
+        
+    }
+}).mount('#app');
