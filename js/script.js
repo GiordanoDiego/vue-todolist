@@ -11,7 +11,7 @@ document.getElementById('idHtml').innerHTML = noveVariabileJS;
     if(isNaN(kmValue))
 
 */
-
+const { createApp } = Vue;
 createApp({
     data() {
         return {
