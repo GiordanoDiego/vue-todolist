@@ -25,10 +25,15 @@
         <main>
             <div id="app" class="container">
                <ul>
-                    <li v-for = "(todo, i) in todos" :class="{
-                        'todo-done' : todo.done
-                    }">
+                    <li 
+                        class="mb-3" 
+                        v-for = "(todo, i) in todos" 
+                        :class="{'todo-done' : todo.done}"
+                    >
                         {{todo.text}};
+                        <button class="btn btn-danger" @click="removeTodo(i)">
+                            Rimuovi
+                        </button>
                     </li>
                </ul>
             </div>

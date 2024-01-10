@@ -32,8 +32,8 @@ createApp({
         };
     },
     methods: {
-        handleButtonClick() {
-            console.log(this.faiQualcosa(3));
+        removeTodo(index){
+            this.todos.splice(index, 1); //primo argomento indice da cui inizio la cancellazione, secondo argomento indici da cancellare
         },
         
     }
