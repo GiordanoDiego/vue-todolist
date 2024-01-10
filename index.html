@@ -24,13 +24,19 @@
        
         <main>
             <div id="app" class="container">
+                <div class="text-center">
+                    <input type="text" placeholder="inserisci il nuovo task" v-model="newTodo">
+                    <button class="btn btn-success" @click="addTodo()">
+                        Add
+                    </button>
+                </div>
                <ul>
                     <li 
                         class="mb-3" 
                         v-for = "(todo, i) in todos" 
                         :class="{'todo-done' : todo.done}"
                     >
-                        {{todo.text}};
+                        {{todo.text}}
                         <button class="btn btn-danger" @click="removeTodo(i)">
                             Rimuovi
                         </button>
