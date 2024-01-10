@@ -18,15 +18,15 @@ createApp({
             newTodo: '',
             todos: [
                 {
-                    text: 'mangiare',
+                    text: 'studiare',
                     done: true,
                 },
                 {
-                    text: 'dormire',
+                    text: 'palestra',
                     done: false,
                 },
                 {
-                    text: 'respirare',
+                    text: 'mangiare',
                     done: true,
                 }
             ],
