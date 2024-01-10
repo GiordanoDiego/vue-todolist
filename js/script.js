@@ -15,7 +15,20 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            h1Content: 'Ora ho Vue qui?',
+            todos: [
+                {
+                    text: 'mangiare',
+                    done: true,
+                },
+                {
+                    text: 'dormire',
+                    done: false,
+                },
+                {
+                    text: 'respirare',
+                    done: true,
+                }
+            ],
         };
     },
     methods: {
