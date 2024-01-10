@@ -46,6 +46,6 @@ createApp({
                 this.newTodo =''; //svuoto il campo di aggiunta
             }
         }
-        
+         
     }
 }).mount('#app');
